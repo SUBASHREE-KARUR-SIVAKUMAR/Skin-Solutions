@@ -25,13 +25,21 @@ Skin-Solutions aims to provide a professional and intuitive tool for preliminary
 
 ## 📂 Repository Structure
 
-Skin-Solutions/
-├── app.py                  # Main Streamlit web application
-├── model.py                # Machine learning model definition and prediction logic
-├── data_loader.py          # Script for loading and preprocessing the HAM10000 dataset
-├── .gitignore              # Specifies files/folders to be ignored by Git (e.g., 'data/', model weights)
-├── requirements.txt        # List of Python dependencies
-└── README.md               # Project overview and setup instructions
+The project is structured with modular Python files for clear organization and maintainability.
+
+- `Skin-Solutions/`
+  - `app.py`                  # Main Streamlit web application
+  - `model.py`                # Machine learning model definition and prediction logic
+  - `data_loader.py`          # Script for loading and preprocessing the HAM10000 dataset
+  - `.gitignore`              # Specifies files/folders to be ignored by Git (e.g., 'data/', model weights)
+  - `requirements.txt`        # List of Python dependencies
+  - `README.md`               # Project overview and setup instructions
+  - `data/`                   # (Local folder for HAM10000 dataset - ignored by Git)
+    - `HAM10000_metadata.csv`
+    - `HAM10000_images_part_1/`
+    - `HAM10000_images_part_2/`
+  - `ham10000_trained_model.h5` # (Local file for trained model weights - ignored by Git)
+  - `class_names.pkl`         # (Local file for saved class names - ignored by Git)
 
 ## 📊 Dataset Information
 
