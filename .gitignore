@@ -1,0 +1,13 @@
+# Python virtual environment
+.venv/
+
+# PyCharm specific files
+.idea/
+__pycache__/
+
+# Ignore large dataset
+data/
+
+# Ignore saved model weights
+*.h5
+*.pkl
