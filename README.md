@@ -77,6 +77,8 @@ This project serves as a demonstration of end-to-end thinking, problem-solving, 
 *   Rationale behind architectural and technical decisions.
 *   Transparent use of AI tools and resources.
 
+## 🌐 Live Demo
+https://skin-solutions.streamlit.app
 ---
 
 **© 2025 ACM-W Technical Challenge | Developed by Subashree**
