@@ -859,92 +859,60 @@ def instructions_page():
         ["Image Acquisition", "Analysis Protocol", "Result Interpretation", "Clinical Integration"])
 
     with tab1:
-        st.markdown("""
-        <div class="medical-card">
-            <h2>Image Acquisition Standards</h2>
-
-            <h3>Equipment Requirements:</h3>
-            <ul>
-                <li>Digital dermatoscope (recommended) or high-resolution camera</li>
-                <li>Minimum resolution: 224×224 pixels</li>
-                <li>Color depth: 24-bit RGB</li>
-                <li>File formats: JPEG, PNG</li>
-            </ul>
-
-            <h3>Image Quality Criteria:</h3>
-            <ul>
-                <li><strong>Focus:</strong> Sharp, clear lesion boundaries</li>
-                <li><strong>Lighting:</strong> Even, shadow-free illumination</li>
-                <li><strong>Positioning:</strong> Lesion centered in frame</li>
-                <li><strong>Scale:</strong> Lesion occupies 50-80% of image area</li>
-            </ul>
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown("## Image Acquisition Standards")
+        
+        st.markdown("### Equipment Requirements:")
+        st.write("• Digital dermatoscope (recommended) or high-resolution camera")
+        st.write("• Minimum resolution: 224×224 pixels")
+        st.write("• Color depth: 24-bit RGB")
+        st.write("• File formats: JPEG, PNG")
+        
+        st.markdown("### Image Quality Criteria:")
+        st.write("• **Focus:** Sharp, clear lesion boundaries")
+        st.write("• **Lighting:** Even, shadow-free illumination")
+        st.write("• **Positioning:** Lesion centered in frame")
+        st.write("• **Scale:** Lesion occupies 50-80% of image area")
 
     with tab2:
-        st.markdown("""
-        <div class="medical-card">
-            <h2>Analysis Protocol</h2>
-
-            <h3>Pre-Analysis Checklist:</h3>
-            <ul>
-                <li>Verify image quality meets standards</li>
-                <li>Confirm patient consent for AI analysis</li>
-                <li>Document clinical context and history</li>
-            </ul>
-
-            <h3>Analysis Process:</h3>
-            <ol>
-                <li>Upload high-quality dermatoscopic image</li>
-                <li>Review image information panel</li>
-                <li>Initiate AI analysis</li>
-                <li>Monitor processing status</li>
-                <li>Review generated diagnostic report</li>
-            </ol>
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown("## Analysis Protocol")
+        
+        st.markdown("### Pre-Analysis Checklist:")
+        st.write("• Verify image quality meets standards")
+        st.write("• Confirm patient consent for AI analysis")
+        st.write("• Document clinical context and history")
+        
+        st.markdown("### Analysis Process:")
+        st.write("1. Upload high-quality dermatoscopic image")
+        st.write("2. Review image information panel")
+        st.write("3. Initiate AI analysis")
+        st.write("4. Monitor processing status")
+        st.write("5. Review generated diagnostic report")
 
     with tab3:
-        st.markdown("""
-        <div class="medical-card">
-            <h2>Result Interpretation Guidelines</h2>
-
-            <h3>Confidence Levels:</h3>
-            <ul>
-                <li><strong>High (≥70%):</strong> Strong diagnostic indication</li>
-                <li><strong>Moderate (50-69%):</strong> Possible diagnosis, clinical correlation needed</li>
-                <li><strong>Low (<50%):</strong> Uncertain, additional evaluation required</li>
-            </ul>
-
-            <h3>Clinical Actions:</h3>
-            <ul>
-                <li><strong>Malignant Findings:</strong> Immediate referral to specialist</li>
-                <li><strong>Pre-malignant:</strong> Schedule follow-up monitoring</li>
-                <li><strong>Benign:</strong> Routine surveillance appropriate</li>
-            </ul>
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown("## Result Interpretation Guidelines")
+        
+        st.markdown("### Confidence Levels:")
+        st.write("• **High (≥70%):** Strong diagnostic indication")
+        st.write("• **Moderate (50-69%):** Possible diagnosis, clinical correlation needed")
+        st.write("• **Low (<50%):** Uncertain, additional evaluation required")
+        
+        st.markdown("### Clinical Actions:")
+        st.write("• **Malignant Findings:** Immediate referral to specialist")
+        st.write("• **Pre-malignant:** Schedule follow-up monitoring")
+        st.write("• **Benign:** Routine surveillance appropriate")
 
     with tab4:
-        st.markdown("""
-        <div class="medical-card">
-            <h2>Clinical Integration</h2>
-
-            <h3>Documentation Requirements:</h3>
-            <ul>
-                <li>Include AI analysis in patient record</li>
-                <li>Document confidence levels and recommendations</li>
-                <li>Note any clinical correlation or discrepancies</li>
-            </ul>
-
-            <h3>Quality Assurance:</h3>
-            <ul>
-                <li>Regular validation against histopathology</li>
-                <li>Continuous monitoring of diagnostic accuracy</li>
-                <li>Staff training on system limitations</li>
-            </ul>
-        </div>
-        """, unsafe_allow_html=True)
+        st.markdown("## Clinical Integration")
+        
+        st.markdown("### Documentation Requirements:")
+        st.write("• Include AI analysis in patient record")
+        st.write("• Document confidence levels and recommendations")
+        st.write("• Note any clinical correlation or discrepancies")
+        
+        st.markdown("### Quality Assurance:")
+        st.write("• Regular validation against histopathology")
+        st.write("• Continuous monitoring of diagnostic accuracy")
+        st.write("• Staff training on system limitations")
 
 
 def reports_page():
